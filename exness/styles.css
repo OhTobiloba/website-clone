@@ -1,0 +1,766 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+button a {
+    text-decoration: none;
+}
+
+.section {
+    /* padding: 1rem; */
+}
+
+.container {
+    max-width: 1280px;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+}
+
+.chat {
+    position: fixed;
+    bottom: 1rem;
+    right: 1.2rem;
+    background-color: #ffde02;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* NAV BAR */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.949);
+
+}
+
+.logo {
+    margin-top: .3rem;
+}
+
+.nav-links-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5rem
+}
+
+#partners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.nav-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+}
+
+.nav-btn {
+    padding: 1rem 2rem;
+    border-radius: 4px;
+}
+
+.nav-btn a {
+    color: black;
+    font-weight:600;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.EN {
+    background-color: rgba(255, 255, 255, 0.949);
+    padding: 0;
+}
+
+.register {
+    background-color: #ffde02;
+    font-weight: bold;
+    color: black;
+}
+
+.freeDemo {
+    box-shadow: inset;
+    background-color: #7777773a;
+}
+
+.register a {
+    color: black;
+    font-weight:600;
+    font-size: 1rem;
+}
+
+.signIn a {
+    color: black;
+    font-weight:600;
+    font-size: 1rem;
+}
+
+.signIn {
+    box-shadow: inset;
+    background-color: #e3e6e678;
+}
+/* End of NAV BAR */
+
+
+/* HERO / HEADER SECTION */
+/* #header {
+    position: relative;
+} */
+
+#header {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.header {
+    position: relative;
+    top: 5rem;
+    text-align: center;
+    padding: 4rem 0 1.5rem;
+}
+
+video {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+}
+
+.header-txt {
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+}
+
+.header-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+
+    margin: 2rem 0 3rem;
+}
+
+.testimonials {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6rem;
+    padding: 2rem 0;
+
+    border-top: .5px solid rgba(142, 142, 142, 0.334);
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+}
+/* End of HERO / HEADER SECTION */
+
+
+/* TRADING CONDITION SECTION */
+#tc {
+    background-color: #070e20;
+    color: white;
+    padding-bottom: 1.2rem;
+
+}
+
+#tc p {
+    color: rgb(221, 221, 221);
+}
+
+.thrive-in-gold-market {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.tc-heading-txt {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    font-weight: 400;
+}
+
+.trading-condition {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 4rem 0;
+    gap: 2rem;
+}
+
+.tc-1, .tc-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 5rem; */
+}
+
+.tc-content {
+    margin: 3rem 0;
+}
+
+.tc-content small {
+    background-color: #6c8595;
+    padding: .3rem .7rem;
+    border-radius: .8rem;
+}
+
+.tc-content h3 {
+    margin: 1rem 0;
+}
+
+.mobile-trade-ui {
+    max-width: 100%;
+}
+
+/* Trade assets */
+.trade-assets {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+table {
+    margin: 3rem auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 1px solid rgba(117, 108, 108, 0.53);
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .3rem;
+    color: rgb(176, 176, 176);
+}
+
+td {
+    padding: 1.2rem 4rem 1.2rem 1.5rem;
+
+    text-align: left;
+
+    /* margin-right: 7rem; */
+}
+
+.tc-instrument {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+
+/* End of Trade assets */
+
+/* End of TRADING CONDITION SECTION */
+
+
+
+
+.img-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+
+    /* border: 2px solid green; */
+    margin: 7rem 0;
+}
+
+
+.img-flex img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.trading-app-txt {
+    padding: 2rem;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.trading-app-txt h2 {
+    font-weight: 500;
+    font-size: 2.3rem;
+}
+
+.trading-app-txt img{
+    width: 5.5rem;
+}
+
+.trading-app-txt ul li {
+    margin-bottom: 1.1rem;
+}
+
+
+/* Listen Section */
+#listen {
+    background-image: url(./assets/images/xxl_exness_home_podcast_desktop_e1977e9505.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    color: white;
+    padding: 3rem 5rem;
+}
+
+
+.listen-container {
+    margin: 5rem 0;
+}
+
+#listen-btn {
+    background-color: #ffe535;
+    padding: 1rem 3.5rem;
+    border-radius: 7px;
+    border: none;
+    margin: 2rem 0;
+}
+
+.listen-container h2{
+    font-size: 2.5rem;
+}
+
+.listen-container p{
+    margin: 2rem 0;
+    line-height: 1.5rem;
+}
+
+.listen-btn {
+    font-weight: 600;
+    font-size: 1rem;
+
+}
+
+
+/* End of Listen Section */ 
+
+
+/* Keep Up section */
+.keep-up {
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.keep-up h2 {
+    margin: 3rem 0 1.5rem;
+    font-size: 2.2rem;
+    font-weight: 450;
+}
+
+.keep-up p {
+    margin: 1rem 0;
+    color: rgb(144, 143, 143);
+
+}
+
+.keep-up a {
+    margin: 2rem 0;
+    text-decoration: none;
+    color: rgb(144, 143, 143);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.blog-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 3rem 0;
+}
+
+.blog-card {
+    border: .5px solid rgb(221, 221, 221);
+    border-radius: 10px;
+}
+
+.blog-card img {
+    max-width: 100%;
+    border-radius: 9px 9px 0 0;
+}
+
+.card-txt {
+    margin: 1.5rem;
+    text-align: left;
+}
+
+.card-txt small {
+    background-color: rgb(224, 224, 224);
+    padding: .4rem .8rem;
+    border-radius: 1rem;
+}
+
+.card-txt p {
+    margin: 2rem 0;
+}
+/* End of Keep Up section */
+
+
+
+/* Trade with a broker section */
+#broker {
+    background-image: url(./assets/images/home_cta_banner_7bb7b120e2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    color: white;
+    padding: 7rem 0;
+}
+
+
+.broker-container {
+    position: relative;
+    max-width: 100%;
+    margin: 5rem auto;
+}
+
+#broker-btn {
+    background-color: #ffe535;
+    padding: 1rem 3.5rem;
+    border-radius: 7px;
+    border: none;
+    margin: 2rem 0;
+}
+
+.broker-container h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.broker-container p{
+    margin: 1rem 0;
+    color: rgb(170, 170, 170);
+
+}
+
+/* CTA banner */
+.cta-banner {
+    position: absolute;
+    
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    background-color: black;
+    display: flex;
+    /* gap: 15rem; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+
+    border-radius: 7px;
+}
+
+
+.cta-freeDemo {
+    box-shadow: inset;
+    color: white;
+    background-color: #afafaf3b;
+    font-weight: 600;
+}
+
+/* End of CTA banner */
+
+/* End of Trade with a broker section */
+
+
+/* Proofs Section */
+#proofs {
+    padding-top: 15rem;
+    /* padding-bottom: 3rem; */
+    color: rgb(170, 170, 170);
+    font-size: .9rem;
+
+}
+/* End of Proofs Section */
+
+
+/* exness top footer */
+#xness-footer {
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+}
+
+.border {
+    border-top: .7px solid rgba(155, 155, 155, 0.371);
+    border-bottom: .7px solid rgba(155, 155, 155, 0.392);
+    padding: 3rem 0;
+}
+
+.border img {
+    margin: 2rem 0;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    justify-content: space-between;
+    align-items: start;
+    gap: 1rem;
+}
+
+
+.footer-links div h3 {
+    margin-bottom: 1rem;
+}
+
+
+.footer-links div ul li {
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+
+}
+
+.footer-links div ul li a {
+    text-decoration: none;
+    color: rgb(121, 121, 121);
+}
+
+.social-links {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.policy-notes p {
+    margin-bottom: 1rem;
+    color: rgb(125, 124, 124);
+
+}
+
+
+.other-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+
+.left-other-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.left-other-links ul a{
+    color: rgb(68, 68, 68);
+    /* text-decoration: none; */
+}
+
+.other-links h4 {
+    color: rgb(117, 117, 117);
+
+}
+
+/* End of exness top footer */
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgb(1, 1, 53);
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: red;
+}
+
+
+/* SIGNUP PAGE */
+.nav {
+    background: #f8fcff65;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 2rem auto; 
+    /* text-align: center; */
+}
+
+.form-container h1 {
+    margin: 2rem 0;
+}
+
+.account {
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+}
+
+
+.account p {
+    padding: 1rem .5rem;
+    border-bottom: 1.5px solid rgb(205, 205, 205);
+    width: 50%;
+}
+
+
+input {
+    width: 100%;
+    padding: .8rem 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 5px;;
+}
+
+
+.continue {
+    background-color: rgb(255, 222, 2);
+    ;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: .7rem;
+    margin-bottom: .8rem;
+}
+
+.google {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+
+    background-color: rgba(108, 133, 149, 0.08);
+    padding: .7rem;
+}
+
+
+
+
+
+.account {
+    display: flex;
+}
+
+.opt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.form-container h6{
+    text-align: center;
+    margin: 2rem 0;
+    color: rgb(17, 114, 204);
+}
+
+.form-container h6 a{
+    color: rgb(17, 114, 204)}
+
+
+
+
+/* END OF SIGNUP PAGE */
+
+
+/* POLICY SECTION */
+.policy {
+    display: grid;
+    grid-template-columns: .75fr .25fr;
+    gap: 2rem;
+    align-items: start;
+
+    padding: 3rem;
+}
+
+
+.policy-links li {
+    margin-bottom: 1rem;
+}
+
+.policy-links a {
+    /* text-decoration: none; */
+    color: rgb(17, 114, 204);
+}
+
+.policy-links ul {
+    margin-bottom: 3rem;
+}
+
+/* END OF POLICY SECTION */
+#input {
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-field {
+    border: none;
+}
